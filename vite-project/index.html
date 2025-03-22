@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>one message board</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>One Message Board</h1>
+      </header>
+      <main>
+        <div class="form-container">
+          <h2>send message:</h2>
+          <div class="form">
+            <label>your nickname:</label>
+            <input type="text" id="nickname" class="form-control" placeholder="name"/>
+          </div>
+          <div class="form">
+            <label>message:</label>
+            <input type="text" id="message" class="form-control" placeholder="message"/>
+          </div>
+          <button class="btn btn-fetch" id="btn">fetch</button>
+        </div>
+        <div class="table-container">
+          <table class="table" id="table"></table>
+          <div class="text-center">
+            <button class="btn" id="delete">delete all</button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="src/main.ts"></script>
+  </body>
+</html>
